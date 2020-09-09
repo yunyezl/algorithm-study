@@ -1,4 +1,4 @@
-# algorithm-study
+# algorithm-study!
 
 ## 1주차 탐욕 알고리즘
 1. [문제] 큰수의 법칙
