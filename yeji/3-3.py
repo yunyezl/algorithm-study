@@ -8,10 +8,12 @@ array2 = []
 min = array[0][0]
 
 for i in range(n):
+    if i != 0:
+        min = array[i][0]
     for j in range(m):
         if array[i][j] < min:
             min = array[i][j]
     array2.append(min)
-    min = array[i][j]        
-
+    print(min)
+   
 print(max(array2))
