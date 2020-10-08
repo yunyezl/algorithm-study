@@ -12,17 +12,16 @@ for i in sortdict:
     
 
 # 계수 정렬
-n = int(input())
-dic = { }
-array = []
+# n = int(input())
+# dic = { }
+# array = []
 
-for i in range(n):
-    name, score = input().split()
-    dic[name] = int(score)
-    array.append(int(score))
+# for i in range(n):
+#     name, score = input().split()
+#     dic[name] = int(score)
+#     array.append(int(score))
 
-count = [0] * (max(array) + 1)
+# count = [0] * (max(array) + 1)
 
-for i in range(len(array)):
-    count[array[i]] += 1
-
+# for i in range(len(array)):
+#     count[array[i]] += 1
