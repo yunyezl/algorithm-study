@@ -1,7 +1,7 @@
 global h
 h = 0
 
-def search(array, target, start, end): 
+def search(array, m, start, end): 
     global h
     slideDduckList = []
 
