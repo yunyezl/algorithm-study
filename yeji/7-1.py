@@ -11,14 +11,14 @@ def binary_search(array, target, start, end):
 
 
 n = int(input())
-store = list(map(int, input().split()))
+stock = list(map(int, input().split()))
 m = int(input())
 order = list(map(int, input().split()))
 
-store.sort()
+stock.sort()
 
 for i in range(m):
-    result = binary_search(store, order[i], 0, n - 1)
+    result = binary_search(stock, order[i], 0, n - 1)
     if result == None:
         print("no", end=' ')
     else :
