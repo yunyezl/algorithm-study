@@ -1,7 +1,7 @@
 n, m = map(int, input().split())
-coin = []
+array = []
 for i in range(n):
-    coin.append(int(input()))
+   array.append(int(input()))
 
 d = [10001] * (m+1)
 
