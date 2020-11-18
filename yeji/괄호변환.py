@@ -48,8 +48,7 @@ def solution(p):
     u = u.replace('(', '.')
     u = u.replace(')', '(')
     u = u.replace('.', ')')
-    answer += u    
-
-    return answer
+    
+    return answer + u
 
     
