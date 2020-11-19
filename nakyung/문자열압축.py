@@ -1,3 +1,4 @@
+#28번 테스트 케이스 안됨
 def solution(s):
     split = []
     l = []
