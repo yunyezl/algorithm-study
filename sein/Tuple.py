@@ -1,17 +1,13 @@
 def solution(s):
     answer = []
 
-    S = s[2:-2].split("},{")
-    S.sort(key=lambda x: len(x))
+    split_s = s[2:-2].split("},{")
+    split_s.sort(key=lambda x: len(x))
 
-
-    for t in S:
+    for t in split_s:
         l = list(map(int, t.split(',')))
-
         for add in l :
             if add not in answer :
                 answer.append(add)
 
-    print(answer)
-
-solution("{{1,2,3},{2,1},{1,2,4,3},{2}}")
+    return answer
