@@ -44,6 +44,7 @@ def solution(expression):
             exList.append(s)
             s = ''
     exList.append(s)
+    print(exList)   
 
     for i in allCalCase:
         print("연산자 우선순위:", i)
@@ -52,6 +53,7 @@ def solution(expression):
             count = exList2.count(j)
             for k in range(count):
                 index = exList2.index(j)
+                print(index, j)
                 if j == '+':
                     exList2[index] = int(exList2[index - 1]) + int(exList2[index + 1])
                     del exList2[index + 1]
@@ -64,6 +66,7 @@ def solution(expression):
                     exList2[index] = int(exList2[index - 1]) * int(exList2[index + 1])
                     del exList2[index + 1]
                     del exList2[index - 1]
+        print(exList2)
         exList2 = list(map(str, exList2))
         if len(exList2) > 1:
             if exList2[1] == '+':
@@ -75,5 +78,7 @@ def solution(expression):
         else:
             result = abs(int(exList2[0]))
         allAnswer.append(abs(result))
+    print(allAnswer)
     return max(allAnswer)
 
+print(solution("50*6-3*2"))
